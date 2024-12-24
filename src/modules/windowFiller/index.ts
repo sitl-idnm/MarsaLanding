@@ -1,1 +1,0 @@
-export { default as WindowFiller } from './windowFiller'

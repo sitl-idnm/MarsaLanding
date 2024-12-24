@@ -8,7 +8,6 @@ import '@styles/global.scss'
 import localFont from 'next/font/local'
 import { Provider } from '@service/provider'
 import { LanguageProvider } from '@/service/language'
-import { Preloader } from '@/modules/preloader'
 
 
 const actay = localFont({
@@ -43,7 +42,6 @@ export default function RootLayout({
       <body className={`${actay.variable} ${esqadero.variable}`}>
         <Provider>
           <LanguageProvider>
-            <Preloader />
             <div id="root">
               <Header />
               {children}
