@@ -11,7 +11,7 @@ const Home: FC<HomeProps> = ({ className }) => {
 
   return (
     <main className={rootClassName}>
-      <ButtonBlue blue={false}>Узнать больше в Telegram!</ButtonBlue>
+      <ButtonBlue blue={false}>Подписаться на Telegram</ButtonBlue>
     </main>
   )
 }
