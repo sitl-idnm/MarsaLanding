@@ -2,44 +2,35 @@
 @use "@styles/mixins" as *;
 @use "@styles/variables";
 
-/* stylelint-disable rule */
-/* stylelint-disable rule */
-
-.root {
+.button {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background: linear-gradient(90deg, rgba(109, 206, 255, 0.3) 0%, rgba(109, 206, 255, 0) 100%);
-	width: 240px;
-	height: 50px;
-  cursor: pointer;
+	gap: 16px;
 
-	&::before {
-		content: url('../../shared/assets/icons/buttonBorder.svg');
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 34px;
-		height: 60px;
-		transform: translateX(-21px) translateY(-5px);
+	padding: 26px;
+
+	max-height: 71px;
+	width: max-content;
+
+  background-repeat: no-repeat;
+	background-position: center;
+
+	background-size: 100% 100%;
+
+	@include tablet {
+		gap: 12px;
+
+		width: 336px;
+		justify-content: center;
 	}
 
-	&::after {
-		content: url('../../shared/assets/icons/buttonBorder.svg');
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 34px;
-		height: 60px;
-		transform: translateX(21px) translateY(-5px) rotate(180deg);
-	}
-}
+	.text {
+		font-family: var(--font-act-reg);
+		font-size: 16px;
+		line-height: 150%;
+		color: var(--color-blue-main);
 
-.text {
-	font-family: var(--font-esq);
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1;
-  color: var(--color-blue-main); // Светло-голубой цвет текста
+		@include tablet {
+			font-size: 14px;
+		}
+	}
 }

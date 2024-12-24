@@ -1,4 +1,4 @@
 export interface ButtonBlueProps {
-  className?: string,
-  children: string
+  children: string,
+  blue?: boolean
 }
