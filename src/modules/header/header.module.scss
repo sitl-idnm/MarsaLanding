@@ -34,10 +34,7 @@
   .tg__about {
     display: flex;
     gap: 20px;
-
-    @include mobile-large {
-      display: none;
-    }
+    order: 2;
 
     a {
       display: flex;
@@ -57,14 +54,13 @@
   position: relative;
 
   @include mobile-large {
-    order: 1;
+    order: 2;
   }
 }
 
 .logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  order: 1;
+  position: relative;
 
   @include mobile-large {
     position: relative;

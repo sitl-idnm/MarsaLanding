@@ -25,20 +25,6 @@ const Home: FC<HomeProps> = ({ className }) => {
 
   return (
     <main className={rootClassName}>
-      <WindowFiller />
-      <Introduce />
-      <div className={styles.imposter}>
-        <Company />
-        {/* <Link href='/vacancy'>
-          <Button size='sm'>ВАКАНСИИ</Button>
-        </Link> */}
-        <Traffic />
-        <Principle cards={[]} />
-        <Mission />
-        <Gumbit />
-        <Part />
-        <Faq />
-      </div>
     </main>
   )
 }

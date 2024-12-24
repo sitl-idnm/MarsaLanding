@@ -48,7 +48,7 @@ const Header: FC<HeaderProps> = ({ className }) => {
       <Wrapper className={styles.wrapper}>
         {/* Отображение TelegramLink для больших экранов */}
         <div className={styles.tg__about}>
-          {isLargeScreen && <TelegramLink className={styles.telegram} />}
+          <TelegramLink className={styles.telegram} />
           {name === '/vacancy' && window.innerWidth > 1199 && (
             <Link href={'/'}>
               <p>{about}</p> {/* Используем переведенный текст */}
@@ -57,12 +57,6 @@ const Header: FC<HeaderProps> = ({ className }) => {
         </div>
 
         <Logo className={styles.logo} />
-
-        <div className={styles.language}>
-          {/* Отображение TelegramLink для маленьких экранов */}
-          {!isLargeScreen && <TelegramLink className={styles.telegramSmall} />}
-          <LanguageLinks className={styles.language__links} />
-        </div>
       </Wrapper>
     </header>
   );

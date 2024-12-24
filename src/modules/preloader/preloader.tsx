@@ -20,7 +20,7 @@ const Preloader: FC<PreloaderProps> = ({
           setIsVisible(false)
         }
       })
-    }, 6500)
+    }, 500)
 
     return () => clearTimeout(timer)
   }, [])

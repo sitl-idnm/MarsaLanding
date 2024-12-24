@@ -12,13 +12,8 @@
 	position: relative;
 
 	&__item {
-    width: 40px;
-    height: 42px;
+    width: 43px;
+    height: 45px;
 		position: relative;
-
-		@include tablet-small {
-			width: 32px;
-			height: 32px;
-		}
 	}
 }
