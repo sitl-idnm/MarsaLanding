@@ -5,9 +5,6 @@ import classNames from 'classnames';
 
 import styles from './vacancy.module.scss';
 import { VacancyProps } from './vacancy.types';
-import { Folder } from '@/modules/folder';
-import { Buildim } from '@/modules/buildim';
-import { Friend } from '@/modules/friend';
 import { useLanguage, Language } from '@/service/language';
 
 // Объект переводов
@@ -49,9 +46,6 @@ const Vacancy: FC<VacancyProps> = ({ className }) => {
 
   return (
     <main className={rootClassName}>
-      <Buildim />
-      <Folder title={title} text={text} ps={ps} />
-      <Friend textBonus={bonus} />
     </main>
   );
 };
