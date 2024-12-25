@@ -184,3 +184,33 @@
 		font-size: 12px;
 	}
 }
+
+@media (max-width: 420px) {
+	.cards {
+		gap: 0;
+	}
+
+	.card:nth-child(2) {
+		transform: translateY(-10px);
+	}
+
+	.card:last-child {
+		transform: translateY(-20px);
+	}
+}
+
+
+
+@media (max-width: 380px) {
+	.cards {
+		gap: 0;
+	}
+
+	.card:nth-child(2) {
+		transform: translateY(-25px);
+	}
+
+	.card:last-child {
+		transform: translateY(-50px);
+	}
+}
