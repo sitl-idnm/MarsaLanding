@@ -26,7 +26,7 @@ const ButtonBlue: FC<ButtonBlueProps> = ({ children, blue }) => {
   };
 
   return (
-    <Link href='#'>
+    <Link href='https://t.me/marsateam'>
       <div
         className={styles.button}
         style={{ backgroundImage: `url(${backgroundUrl})` }}
