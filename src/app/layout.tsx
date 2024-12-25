@@ -21,6 +21,17 @@ const actay = localFont({
   variable: '--font-act'
 })
 
+const actayR = localFont({
+  src: [
+    {
+      path: './fonts/Actay-Regular.woff2',
+      weight: '400',
+      style: 'normal'
+    }
+  ],
+  variable: '--font-act-reg'
+})
+
 const esqadero = localFont({
   src: [
     {
@@ -39,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${actay.variable} ${esqadero.variable}`}>
+      <body className={`${actay.variable} ${esqadero.variable} ${actayR.variable}`}>
         <Provider>
           <LanguageProvider>
             <div id="root">

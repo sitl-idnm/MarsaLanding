@@ -2,11 +2,9 @@
 @use "@styles/mixins" as *;
 @use "@styles/variables";
 
-/* stylelint-disable rule */
-/* stylelint-disable rule */
-
-.root {
+.button {
   display: flex;
+<<<<<<< HEAD
   align-items: center;
   justify-content: center;
   position: relative;
@@ -14,12 +12,35 @@
 	width: 240px;
 	height: 50px;
   cursor: pointer;
-}
+=======
+	gap: 16px;
 
-.text {
-	font-family: var(--font-esq);
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1;
-  color: var(--color-blue-main); // Светло-голубой цвет текста
+	padding: 26px;
+
+	max-height: 71px;
+	width: max-content;
+
+  background-repeat: no-repeat;
+	background-position: center;
+
+	background-size: 100% 100%;
+
+	@include tablet {
+		gap: 12px;
+
+		max-width: 336px;
+		justify-content: center;
+	}
+
+	.text {
+		font-family: var(--font-act-reg);
+		font-size: 16px;
+		line-height: 150%;
+		color: var(--color-blue-main);
+
+		@include tablet {
+			font-size: 14px;
+		}
+	}
+>>>>>>> 0f644815af2df98802ed834bac13edfb514b3a65
 }
