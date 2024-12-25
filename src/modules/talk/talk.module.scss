@@ -1,0 +1,86 @@
+@use "@styles/func";
+@use "@styles/mixins" as *;
+@use "@styles/variables";
+
+.root {
+	max-width: 847px;
+	margin: 0 auto;
+}
+
+.title {
+	max-width: 820px;
+	margin-bottom: 8px;
+	text-align: center;
+
+	@include tablet {
+		text-align: left;
+		line-height: 130%;
+	}
+
+	span {
+		font-size: 46px;
+		line-height: 120%;
+		letter-spacing: 0.11em;
+		font-family: var(--font-act);
+		margin: 0;
+		padding: 0;
+
+		@include tablet {
+			font-size: 42px;
+			text-align: center;
+		}
+
+		@include tablet-small {
+			font-size: 26px;
+			text-align: center;
+		}
+	}
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+	display: flex;
+	gap: 13px;
+}
+
+.itemText {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.itemTitle {
+	font-size: 20px;
+	line-height: 150%;
+	font-family: var(--font-act);
+	color: var(--color-white);
+
+	@include tablet-small {
+		font-size: 16px;
+	}
+}
+
+.itemDescription {
+	font-size: 16px;
+	line-height: 150%;
+	font-family: var(--font-esq);
+	color: var(--color-white);
+
+	@include tablet-small {
+		font-size: 12px;
+	}
+}
+
+.itemImage {
+  width: 76px;
+  height: 76px;
+
+	@include tablet-small {
+		width: 55px;
+		height: 55px;
+	}
+}

@@ -14,6 +14,82 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+	@include tablet {
+		background-image: url('/images/introduce-tablet.webp');
+		padding: 0 11px;
+	}
+
+	@include tablet-small {
+		background-image: url('/images/introduce-mobile.webp');
+	}
+
+	a:hover {
+		opacity: 1;
+	}
+}
+
+.title {
+	max-width: 776px;
+	margin-bottom: 16px;
+
+	@include tablet {
+		text-align: center;
+	}
+
+	@include tablet-small {
+		text-align: left;
+	}
+
+	span {
+		font-size: 46px;
+		line-height: 120%;
+		letter-spacing: 0.11em;
+		font-family: var(--font-act);
+
+		@include tablet {
+			font-size: 42px;
+			text-align: center;
+		}
+
+		@include tablet-small {
+			font-size: 32px;
+			text-align: center;
+		}
+	}
+}
+
+.subtitle {
+	max-width: 500px;
+	margin-bottom: 28px;
+	font-family: var(--font-esq);
+	font-size: 20px;
+	line-height: 150%;
+	text-transform: uppercase;
+	color: var(--color-white-2);
+	text-align: center;
+
+	@include tablet-small {
+		margin-bottom: 16px;
+		text-align: left;
+		font-size: 14px;
+	}
+}
+
+.description {
+	max-width: 400px;
+	margin-top: 16px;
+	font-size: 15px;
+	line-height: 150%;
+	color: var(--color-white-2);
+	font-family: var(--font-esq);
+	text-align: center;
+
+
+	@include tablet-small {
+		font-size: 12px;
+		text-align: left;
+	}
 }
 
 .marsa {

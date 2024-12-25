@@ -18,6 +18,23 @@
 
 	background-size: 100% 100%;
 
+	transition: all 0.3s ease;
+
+	span {
+		transition: all 0.3s ease;
+		color: var(--color-blue-main);
+	}
+
+	&:hover {
+		opacity: 1;
+		transition: all 0.3s ease;
+
+		span {
+			color: black;
+			transition: all 0.3s ease;
+		}
+	}
+
 	@include tablet {
 		gap: 12px;
 
@@ -29,7 +46,6 @@
 		font-family: var(--font-act-reg);
 		font-size: 16px;
 		line-height: 150%;
-		color: var(--color-blue-main);
 
 		@include tablet {
 			font-size: 14px;
