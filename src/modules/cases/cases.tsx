@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import styles from './cases.module.scss'
 import { CasesProps } from './cases.types'
-import { ButtonBlue, TitleGradient } from '@/ui'
+import { GradientBlur, ButtonBlue, TitleGradient } from '@/ui'
 import CardOutside from '@icons/cases_card_outside.svg'
 import CardOutside_mobile from '@icons/cases_card_outside_mobile.svg'
 import CardInside from '@icons/cases_card_inside.svg'
@@ -52,6 +52,7 @@ const Cases: FC<CasesProps> = ({
 
   return (
     <div className={rootClassName}>
+      <GradientBlur className={styles.gradientBlur} />
       <h2 className={styles.title}>
         <TitleGradient>
           Что делает наши кейсы уникальными?
