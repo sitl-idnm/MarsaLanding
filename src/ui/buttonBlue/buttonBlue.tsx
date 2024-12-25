@@ -8,7 +8,7 @@ import styles from './buttonBlue.module.scss';
 import { ButtonBlueProps } from './buttonBlue.types';
 import Link from 'next/link';
 import Tg from '@icons/tg_blue.svg'
-import TgHover from '@icons/tg_blue_hover.svg'
+// import TgHover from '@icons/tg_blue_hover.svg'
 
 gsap.registerPlugin(ScrollTrigger);
 

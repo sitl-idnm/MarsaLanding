@@ -35,7 +35,7 @@ const Talk: FC<TalkProps> = ({
           </div>
         </div>
         <div className={styles.item}>
-          <Image className={styles.itemImage} src={AvatarFirst} alt=''></Image>
+          <Image className={styles.itemImage} src={AvatarSecond} alt=''></Image>
           <div className={styles.itemText}>
             <h3 className={styles.itemTitle}>
               Мария К.
