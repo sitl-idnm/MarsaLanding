@@ -12,7 +12,7 @@ const ButtonBlue: FC<ButtonBlueProps> = ({ children }) => {
   const [onHover, setOnHover] = useState(false);
 
   return (
-    <Link href='#' className={styles.link}>
+    <Link href='https://t.me/marsateam' className={styles.link}>
       <div
         className={styles.button}
         onMouseEnter={() => setOnHover(true)}

@@ -39,13 +39,16 @@
 	}
 }
 
+.animation {
+	position: relative;
+}
+
 .container {
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
 	padding: 72px 27px 28px 44px;
-	border: 1px solid rgba(109, 206, 255, 0.3);
 
 	@include tablet {
 		padding: 62px 51px 62px 24px;
