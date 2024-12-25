@@ -14,7 +14,7 @@ const Introduce: FC<IntroduceProps> = ({ className }) => {
     <div className={rootClassName}>
       <h1 className={styles.title}>
         <TitleGradient>
-          Взгляни на закулисье арбитража трафика!
+          Взгляни на&nbsp;закулисье арбитража трафика!
         </TitleGradient>
       </h1>
       <p className={styles.subtitle}>

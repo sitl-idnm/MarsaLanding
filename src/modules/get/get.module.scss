@@ -1,16 +1,24 @@
 @use "@styles/func";
-@use "@styles/mixins";
+@use "@styles/mixins" as *;
 @use "@styles/variables";
 
 .root {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 12px;
+	max-width: 100vw;
 }
 
 .subcontainer {
 	max-width: 761px;
 	margin: 0 auto;
 	position: relative;
+	margin-bottom: 22px;
 
-
+	@include tablet-small {
+		margin-bottom: 17px;
+	}
 
 	&::before {
 		content: url('../../shared/assets/icons/get_angle.svg');
@@ -20,6 +28,10 @@
 		transform: translateY(-50%);
 		width: 138px;
 		height: 265px;
+
+		@include tablet-small {
+			display: none;
+		}
 	}
 
 	&::after {
@@ -30,6 +42,10 @@
 		transform: rotate(180deg) translateY(50%);
 		width: 138px;
 		height: 265px;
+
+		@include tablet-small {
+			display: none;
+		}
 	}
 }
 
@@ -39,9 +55,19 @@
 	height: 143px;
 	margin: 0 auto;
 
+
+	@include tablet-small {
+		height: 68px;
+	}
+
 	svg {
 		width: 655px;
 		height: 143px;
+
+		@include tablet-small {
+			width: 311px;
+			height: 68px;
+		}
 	}
 
 	.title {
@@ -58,12 +84,20 @@
 		line-height: 1.2;
 		text-align: center;
 
+		@include tablet-small {
+			line-height: 0.5;
+		}
+
 		span {
 			font-size: 28px;
 			font-family: var(--font-act);
 			letter-spacing: 0.10em;
 			line-height: 1.2;
 			text-align: center;
+
+			@include tablet-small {
+				font-size: 16px;
+			}
 		}
 	}
 
@@ -75,6 +109,10 @@
 		transform: translateY(-50%);
 		width: 35px;
 		height: 60px;
+
+		@include tablet-small {
+			display: none;
+		}
 	}
 
 	&::after {
@@ -85,5 +123,95 @@
 		transform: rotate(180deg) translateY(50%);
 		width: 35px;
 		height: 60px;
+
+		@include tablet-small {
+			display: none;
+		}
 	}
+}
+
+.information {
+	position: relative;
+	max-width: 541px;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background: rgba(109, 206, 255, 0.02);
+	border: 1.81046px solid rgba(109, 206, 255, 0.2);
+	padding: 35px 48px 26px;
+
+	@include tablet-small {
+		padding: 46px 18px;
+	}
+}
+
+.informationItem {
+	display: flex;
+	gap: 12px;
+}
+
+.informationItemText {
+	font-size: 16px;
+	font-family: var(--font-esq);
+	color: var(--color-white-2);
+	line-height: 1.5;
+	text-transform: uppercase;
+
+	@include tablet-small {
+		font-size: 10px;
+	}
+}
+
+.informationSeparator {
+	width: 100%;
+	height: 1px;
+	margin: 10px 0;
+}
+
+.informationAngle__leftTop {
+	position: absolute;
+	left: -3px;
+	top: -2px;
+}
+
+.informationAngle__leftBottom {
+	position: absolute;
+	transform: rotate(270deg);
+	left: -2px;
+	bottom: -3px;
+}
+
+.informationAngle__rightTop {
+	position: absolute;
+	right: -2px;
+	top: -3px;
+	transform: rotate(90deg);
+}
+
+.informationAngle__rightBottom {
+	position: absolute;
+	right: -3px;
+	bottom: -2px;
+	transform: rotate(180deg);
+}
+
+.informationLine__left {
+	position: absolute;
+	left: -8px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.informationLine__right {
+	position: absolute;
+	right: -8px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.button {
+	margin: 20px auto 0;
 }
