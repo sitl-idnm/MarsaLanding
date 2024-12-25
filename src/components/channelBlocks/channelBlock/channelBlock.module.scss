@@ -1,0 +1,50 @@
+@use "@styles/func";
+@use "@styles/mixins" as *;
+@use "@styles/variables";
+
+.root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0 20px;
+
+	gap: 6px;
+	height: 60px;
+
+	width: max-content;
+
+
+	background: center no-repeat url('../../../../public/images/back_channel.png');
+	background-size: 100% 100%;
+
+	@include tablet-small {
+		max-width: 343px;
+		width: 100%;
+		gap: 4px;
+		padding: 0 7px;
+		justify-content: flex-start;
+	}
+
+	.text {
+		font-family: var(--font-esq);
+		font-size: 16px;
+		line-height: 150%;
+		color: var(--color-white);
+		letter-spacing: -0.04em;
+
+		@include tablet-small {
+			font-size: 12px;
+		}
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+
+		@include tablet-small {
+			width: 18px;
+			height: 18px;
+		}
+	}
+}

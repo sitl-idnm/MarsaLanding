@@ -1,0 +1,13 @@
+@use "@styles/func";
+@use "@styles/mixins" as *;
+@use "@styles/variables";
+
+.root {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+
+	@include tablet {
+		flex-flow: column nowrap;
+	}
+}
