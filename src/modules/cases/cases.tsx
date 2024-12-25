@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import styles from './cases.module.scss'
 import { CasesProps } from './cases.types'
-import { TitleGradient } from '@/ui'
+import { ButtonBlue, TitleGradient } from '@/ui'
 import CardOutside from '@icons/cases_card_outside.svg'
 import CardOutside_mobile from '@icons/cases_card_outside_mobile.svg'
 import CardInside from '@icons/cases_card_inside.svg'
@@ -80,6 +80,7 @@ const Cases: FC<CasesProps> = ({
           <p className={styles.cardDescription}>
             Получай доступ к самым рабочим кейсам — подпишись и будь впереди!
           </p>
+          <ButtonBlue>Присоединяйтесь к нам</ButtonBlue>
         </div>
       </div>
     </div>

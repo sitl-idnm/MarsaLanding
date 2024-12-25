@@ -1,6 +1,13 @@
+/* stylelint-disable media-feature-range-notation */
 @use "@styles/func";
 @use "@styles/mixins" as *;
 @use "@styles/variables";
+
+@media (min-width: 1200px) {
+	.link:hover {
+		opacity: 1;
+	}
+}
 
 .button {
   display: flex;
@@ -17,21 +24,25 @@
 	background-position: center;
 
 	background-size: 100% 100%;
+	background-image: url('../../../public/images/back_button_blue.png');
 
-	transition: all 0.3s ease;
+	transition: background-image .3s ease;
 
 	span {
-		transition: all 0.3s ease;
+		transition: all .3s ease;
 		color: var(--color-blue-main);
 	}
 
 	&:hover {
 		opacity: 1;
-		transition: all 1s ease;
+		background-image: url('../../../public/images/back_button_blue_hover.png');
+
+		transition: background-image .3s ease;
+
 
 		span {
 			color: black;
-			transition: all 0.3s ease;
+			transition: all .3s ease;
 		}
 	}
 
