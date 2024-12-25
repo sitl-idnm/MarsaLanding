@@ -16,6 +16,7 @@ import { Cases } from '@/modules/cases'
 import { Talk } from '@/modules/talk'
 import { Get } from '@/modules/get'
 import { First } from '@/modules/first'
+import { Channel } from '@/modules/channel'
 
 const Home: FC<HomeProps> = ({ className }) => {
   const rootClassName = classNames(styles.root, className)
@@ -23,6 +24,7 @@ const Home: FC<HomeProps> = ({ className }) => {
   return (
     <main className={rootClassName}>
       <Introduce />
+      <Channel />
       <Cases />
       <Get />
       <Talk />

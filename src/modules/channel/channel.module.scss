@@ -1,0 +1,49 @@
+@use "@styles/func";
+@use "@styles/mixins" as *;
+@use "@styles/variables";
+
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	max-width: 1000px;
+	margin: 0 auto;
+
+	padding: 144px 0 120px;
+
+	@include tablet {
+		padding: 100px 16px 95px;
+	}
+
+	@include tablet-small {
+		padding: 20px 11px 80px;
+	}
+
+	.title {
+		font-family: var(--font-act);
+		font-size: 47px;
+		max-width: 780px;
+
+		@include tablet {
+			font-size: 42px;
+
+			max-width: 700px;
+		}
+
+		@include tablet-small {
+			font-size: 26px;
+		}
+
+		span {
+			line-height: 130%;
+			letter-spacing: 0.11em;
+		}
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+	}
+}
