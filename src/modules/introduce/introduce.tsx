@@ -12,15 +12,17 @@ const Introduce: FC<IntroduceProps> = ({ className }) => {
 
   return (
     <div className={rootClassName}>
-      <TitleGradient className={styles.title}>
-        Взгляни на закулисье арбитража трафика!
-      </TitleGradient>
+      <h1 className={styles.title}>
+        <TitleGradient>
+          Взгляни на закулисье арбитража трафика!
+        </TitleGradient>
+      </h1>
       <p className={styles.subtitle}>
         Узнай, как мы генерируем сотни лидов ежедневно!
       </p>
-      <a href="https://t.me/marsateam"><ButtonBlue>
+      <ButtonBlue>
         Подписаться на наш Telegram-канал
-      </ButtonBlue></a>
+      </ButtonBlue>
       <p className={styles.description}>
         Эксклюзивные кейсы, инсайты и стратегии от лидеров арбитража. Узнай
         первым!
