@@ -17,6 +17,7 @@ import { Talk } from '@/modules/talk'
 import { Get } from '@/modules/get'
 import { First } from '@/modules/first'
 import { Channel } from '@/modules/channel'
+import { Faq } from '@/modules/faq'
 
 const Home: FC<HomeProps> = ({ className }) => {
   const rootClassName = classNames(styles.root, className)
@@ -29,6 +30,7 @@ const Home: FC<HomeProps> = ({ className }) => {
       <Get />
       <Talk />
       <First />
+      <Faq />
     </main>
   )
 }
