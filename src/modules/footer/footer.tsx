@@ -1,25 +1,13 @@
 'use client';
 
 import { FC } from 'react';
-import { LanguageLinks, TelegramLink, Wrapper } from '@/ui';
+import { TelegramLink, Wrapper } from '@/ui';
 import { useLanguage, Language } from '@/service/language';
 
 import styles from './footer.module.scss';
 import Logo from '../header/logo';
 
-type Translations = Record<Language, { vacancies: string }>;
-
-const translations: Translations = {
-  ru: {
-    vacancies: 'Вакансии',
-  },
-  en: {
-    vacancies: 'Vacancies',
-  },
-};
-
 const Footer: FC = () => {
-  const { language } = useLanguage();
 
   return (
     <footer className={styles.root}>
