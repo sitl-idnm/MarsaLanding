@@ -45,9 +45,11 @@ const Talk: FC<TalkProps> = ({
           </div>
         </div>
       </div>
-      <ButtonBlue>
-        Присоединяйтесь к нашей команде!
-      </ButtonBlue>
+      <div className={styles.button}>
+        <ButtonBlue>
+          Присоединяйтесь к нашей команде!
+        </ButtonBlue>
+      </div>
     </div>
   )
 }
