@@ -15,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 import { Cases } from '@/modules/cases'
 import { Talk } from '@/modules/talk'
 import { Get } from '@/modules/get'
+import { First } from '@/modules/first'
 
 const Home: FC<HomeProps> = ({ className }) => {
   const rootClassName = classNames(styles.root, className)
@@ -23,8 +24,9 @@ const Home: FC<HomeProps> = ({ className }) => {
     <main className={rootClassName}>
       <Introduce />
       <Cases />
-      <Talk />
       <Get />
+      <Talk />
+      <First />
     </main>
   )
 }

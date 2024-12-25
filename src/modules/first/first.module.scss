@@ -1,0 +1,112 @@
+@use "@styles/func";
+@use "@styles/mixins" as *;
+@use "@styles/variables";
+
+.root {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 8px;
+	margin-bottom: 112px;
+
+	@include tablet {
+		margin-bottom: 115px;
+	}
+
+	@include tablet-small {
+		padding: 0 5px;
+		margin-bottom: 45px;
+	}
+}
+
+.title {
+	text-align: left;
+	font-family: var(--font-act);
+	letter-spacing: 0.11em;
+	font-size: 46px;
+	line-height: 1.2;
+
+	span {
+		letter-spacing: 0.11em;
+		line-height: 1.2;
+	}
+
+	@include tablet {
+		font-size: 42px;
+	}
+
+	@include tablet-small {
+		font-size: 28px;
+	}
+}
+
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	padding: 72px 27px 28px 44px;
+	border: 1px solid rgba(109, 206, 255, 0.3);
+
+	@include tablet {
+		padding: 62px 51px 62px 24px;
+	}
+
+	@include tablet-small {
+		gap: 10px;
+		padding: 33px 18px 45px;
+	}
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+
+	@include tablet {
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 19px;
+	}
+}
+
+.infoText {
+	font-size: 18px;
+	font-family: var(--font-esq);
+	line-height: 1.5;
+	color: var(--color-white);
+
+	@include tablet-small {
+		font-size: 12px;
+	}
+}
+
+.square_leftTop {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+}
+
+.square_rightTop {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+}
+
+.square_leftBottom {
+	position: absolute;
+	bottom: -20px;
+	left: -20px;
+	width: 40px;
+	height: 40px;
+}
+
+.square_rightBottom {
+	position: absolute;
+	bottom: -20px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+}
