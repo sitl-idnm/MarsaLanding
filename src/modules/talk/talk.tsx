@@ -19,7 +19,7 @@ const Talk: FC<TalkProps> = ({
     <div className={rootClassName}>
       <h2 className={styles.title}>
         <TitleGradient>
-          Что говорят о нас другие арбитражники?
+          Что говорят о&nbsp;нас другие арбитражники?
         </TitleGradient>
       </h2>
       <div className={styles.content}>
