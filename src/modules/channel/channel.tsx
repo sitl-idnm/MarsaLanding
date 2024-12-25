@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import styles from './channel.module.scss'
 import { ChannelProps } from './channel.types'
-import { ButtonBlue, TitleGradient } from '@/ui'
+import { ButtonBlue, GradientBlur, TitleGradient } from '@/ui'
 import { ChannelBlocks } from '@/components'
 
 const Channel: FC<ChannelProps> = ({
@@ -13,6 +13,7 @@ const Channel: FC<ChannelProps> = ({
 
   return (
     <div className={rootClassName}>
+      <GradientBlur className={styles.gradientBlur} />
       <h2 className={styles.title}>
         <TitleGradient>Почему этот канал изменит твой подход к арбитражу?</TitleGradient>
       </h2>

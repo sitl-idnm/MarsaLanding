@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import styles from './faq.module.scss'
 import { FaqProps } from './faq.types'
-import { TitleGradient } from '@/ui'
+import { GradientBlur, TitleGradient } from '@/ui'
 import Circle from '@icons/faq_circle.svg'
 
 const Faq: FC<FaqProps> = ({
@@ -13,6 +13,7 @@ const Faq: FC<FaqProps> = ({
 
   return (
     <div className={rootClassName}>
+      <GradientBlur className={styles.gradientBlur} />
       <h2 className={styles.title}><TitleGradient>FAQ</TitleGradient></h2>
       <div className={styles.line} />
       <div className={styles.questions}>

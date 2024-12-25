@@ -2,9 +2,16 @@
 @use "@styles/mixins" as *;
 @use "@styles/variables";
 
+.gradientBlur {
+	z-index: -1;
+	position: absolute;
+}
+
 .root {
 	margin: 0 auto;
 	width: max-content;
+	position: relative;
+	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;

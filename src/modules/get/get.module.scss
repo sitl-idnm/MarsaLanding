@@ -166,7 +166,7 @@
 .informationItemText {
 	font-size: 16px;
 	font-family: var(--font-esq);
-	color: var(--color-white-2);
+	color: white;
 	line-height: 1.5;
 	text-transform: uppercase;
 
@@ -177,8 +177,8 @@
 
 .informationSeparator {
 	width: 100%;
-	height: 1px;
-	margin: 10px 0;
+	height: 2px;
+	margin: 7px 0;
 }
 
 .informationAngle__leftTop {
