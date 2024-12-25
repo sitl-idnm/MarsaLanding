@@ -20,9 +20,11 @@ const Introduce: FC<IntroduceProps> = ({ className }) => {
       <p className={styles.subtitle}>
         Узнай, как мы генерируем сотни лидов ежедневно!
       </p>
-      <ButtonBlue>
-        Подписаться на наш Telegram-канал
-      </ButtonBlue>
+      <div className={styles.button}>
+        <ButtonBlue>
+          Подписаться на наш Telegram-канал
+        </ButtonBlue>
+      </div>
       <p className={styles.description}>
         Эксклюзивные кейсы, инсайты и стратегии от лидеров арбитража. Узнай
         первым!

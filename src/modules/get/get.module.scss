@@ -1,0 +1,89 @@
+@use "@styles/func";
+@use "@styles/mixins";
+@use "@styles/variables";
+
+.root {
+}
+
+.subcontainer {
+	max-width: 761px;
+	margin: 0 auto;
+	position: relative;
+
+
+
+	&::before {
+		content: url('../../shared/assets/icons/get_angle.svg');
+		position: absolute;
+		left: -137px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 138px;
+		height: 265px;
+	}
+
+	&::after {
+		content: url('../../shared/assets/icons/get_angle.svg');
+		position: absolute;
+		right: -137px;
+		top: 50%;
+		transform: rotate(180deg) translateY(50%);
+		width: 138px;
+		height: 265px;
+	}
+}
+
+.container {
+	position: relative;
+	max-width: 655px;
+	height: 143px;
+	margin: 0 auto;
+
+	svg {
+		width: 655px;
+		height: 143px;
+	}
+
+	.title {
+		max-width: 607px;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		font-size: 28px;
+		font-family: var(--font-act);
+		letter-spacing: 0.10em;
+		line-height: 1.2;
+		text-align: center;
+
+		span {
+			font-size: 28px;
+			font-family: var(--font-act);
+			letter-spacing: 0.10em;
+			line-height: 1.2;
+			text-align: center;
+		}
+	}
+
+	&::before {
+		content: url('../../shared/assets/icons/get_border_detail.svg');
+		position: absolute;
+		left: -54px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 35px;
+		height: 60px;
+	}
+
+	&::after {
+		content: url('../../shared/assets/icons/get_border_detail.svg');
+		position: absolute;
+		right: -54px;
+		top: 50%;
+		transform: rotate(180deg) translateY(50%);
+		width: 35px;
+		height: 60px;
+	}
+}
