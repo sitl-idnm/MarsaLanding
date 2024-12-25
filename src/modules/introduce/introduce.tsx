@@ -18,7 +18,7 @@ const Introduce: FC<IntroduceProps> = ({ className }) => {
       <p className={styles.subtitle}>
         Узнай, как мы генерируем сотни лидов ежедневно!
       </p>
-      <a href="https://t.me/marsateam"><ButtonBlue className={styles.button}>
+      <a href="https://t.me/marsateam"><ButtonBlue>
         Подписаться на наш Telegram-канал
       </ButtonBlue></a>
       <p className={styles.description}>

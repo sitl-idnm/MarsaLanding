@@ -1,3 +1,4 @@
+'use client'
 import { FC } from 'react'
 import classNames from 'classnames'
 
@@ -11,6 +12,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
+import { ButtonBlue } from '@/ui'
 
 const Home: FC<HomeProps> = ({ className }) => {
   const rootClassName = classNames(styles.root, className)
@@ -18,6 +20,7 @@ const Home: FC<HomeProps> = ({ className }) => {
   return (
     <main className={rootClassName}>
       <Introduce />
+      <ButtonBlue blue={false}>Подписаться на Telegram</ButtonBlue>
     </main>
   )
 }

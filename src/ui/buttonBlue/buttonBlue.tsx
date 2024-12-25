@@ -1,42 +1,27 @@
 'use client'
 
-import { FC, useRef, useEffect } from 'react';
-import classNames from 'classnames';
+import { FC } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import styles from './buttonBlue.module.scss';
 import { ButtonBlueProps } from './buttonBlue.types';
+import Link from 'next/link';
+import Tg from '@icons/tg_blue.svg'
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ButtonBlue: FC<ButtonBlueProps> = ({ className, children }) => {
-  const rootClassName = classNames(styles.root, className);
-  const buttonRef = useRef<HTMLDivElement>(null);
+const ButtonBlue: FC<ButtonBlueProps> = ({ children, blue }) => {
 
-  useEffect(() => {
-    if (buttonRef.current) {
-      gsap.fromTo(
-        buttonRef.current,
-        { width: '0px', transformOrigin: 'center' },
-        {
-          width: '240px', // конечная ширина равна полной ширине элемента
-          duration: 1.5,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: buttonRef.current,
-            start: 'top bottom', // запускается, когда кнопка попадает в область видимости
-            toggleActions: 'play none none none',
-          },
-        }
-      );
-    }
-  }, []);
+  const backgroundUrl = blue ? '/images/back_button_blue.png' : '/images/back_button.png';
 
   return (
-    <div ref={buttonRef} className={rootClassName}>
-      <span className={styles.text}>{children}</span>
-    </div>
+    <Link href='#'>
+      <div className={styles.button} style={{ backgroundImage: `url(${backgroundUrl})` }}>
+        <Tg />
+        <span className={styles.text}>{children}</span>
+      </div>
+    </Link>
   );
 };
 
