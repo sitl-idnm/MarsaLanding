@@ -2,7 +2,6 @@
 
 import { FC } from 'react';
 import { TelegramLink, Wrapper } from '@/ui';
-import { useLanguage, Language } from '@/service/language';
 
 import styles from './footer.module.scss';
 import Logo from '../header/logo';
