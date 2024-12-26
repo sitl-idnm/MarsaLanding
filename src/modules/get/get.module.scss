@@ -224,4 +224,8 @@
 
 .button {
 	margin: 20px auto 0;
+
+	@include tablet-small {
+		width: 100%;
+	}
 }

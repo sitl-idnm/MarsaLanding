@@ -75,7 +75,7 @@
 			width: 745px;
 
 			@include tablet-small {
-				width: 340px;
+				width: 390px;
 			}
 
 			&__design {
@@ -120,9 +120,10 @@
 					background: left no-repeat url('../../../public/images/back_faq_mobile.png');
 					background-size: cover;
 
-					width: 312px;
+					width: 350px;
+					height: 148px;
 
-					padding: 25px 7.5px 25px 15px;
+					padding: 40px 19.5px 25px 20px;
 				}
 
 				.question__title {

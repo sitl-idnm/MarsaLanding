@@ -12,7 +12,6 @@
 	margin: 0 auto;
 	width: max-content;
 	position: relative;
-	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,6 +26,7 @@
 	@include tablet-small {
 		width: 100%;
 		padding: 0 12px;
+		overflow: hidden;
 		margin-bottom: 63px;
 	}
 }
@@ -76,7 +76,8 @@
 
 	@include tablet-small {
 		margin-bottom: 19px;
-		font-size: 12px;
+		font-size: 14px;
+		max-width: 250px;
 	}
 }
 
@@ -107,6 +108,7 @@
 			position: absolute;
 			top: 50%;
 			left: 10%;
+			width: 75vw;
 		}
 
 		>div{
@@ -144,8 +146,8 @@
 
 		@include tablet-small {
 			.cardDescription {
-				max-width: 80vw;
-				top: 20%;
+				max-width: 250px;
+				top: 17%;
 				font-size: 14px;
 			}
 		}
@@ -187,9 +189,10 @@
 		position: absolute;
 		top: 50%;
 		left: 10%;
-		transform: translateY(-20px);
+		transform: translateY(-35px);
 		font-size: 18px;
 		letter-spacing: 0.02em;
+		max-width: 200px;
 	}
 }
 
@@ -201,7 +204,7 @@
 
 	@include tablet-small {
 		position: absolute;
-		max-width: 80vw;
+		max-width: 250px;
 		top: 50%;
 		left: 10%;
 		transform: translateY(20px);

@@ -83,6 +83,7 @@
 	text-align: center;
 
 	@include tablet-small {
+		max-width: 250px;
 		margin-bottom: 16px;
 		text-align: left;
 		font-size: 14px;
@@ -112,4 +113,12 @@
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+
+	@include tablet-small {
+		width: 100%;
+
+		a {
+			width: 100%;
+		}
+	}
 }
