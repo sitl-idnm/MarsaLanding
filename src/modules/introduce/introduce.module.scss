@@ -25,12 +25,12 @@
 	background-repeat: no-repeat;
 
 	@include tablet {
-		background-image: url('/images/introduce-tablet.webp');
+		background-image: url('/images/introduce-tablet.png');
 		padding: 0 11px;
 	}
 
 	@include tablet-small {
-		background-image: url('/images/introduce-mobile.webp');
+		background-image: url('/images/introduce-mobile.png');
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: flex-start;
