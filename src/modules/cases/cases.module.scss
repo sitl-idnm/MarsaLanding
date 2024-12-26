@@ -51,12 +51,12 @@
 
 		@include tablet {
 			font-size: 42px;
-			text-align: center;
+			text-align: left;
 		}
 
 		@include tablet-small {
 			font-size: 26px;
-			text-align: center;
+			text-align: left;
 		}
 	}
 }

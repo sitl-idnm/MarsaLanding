@@ -44,7 +44,6 @@
 .title {
 	max-width: 776px;
 	margin-bottom: 16px;
-	text-align: left;
 
 	@include tablet {
 		text-align: center;
@@ -68,7 +67,7 @@
 
 		@include tablet-small {
 			font-size: 32px;
-			text-align: center;
+			text-align: left;
 		}
 	}
 }

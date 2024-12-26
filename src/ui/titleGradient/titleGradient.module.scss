@@ -30,7 +30,6 @@
 }
 
 .title {
-  text-align: left;
   font-size: 42px;
   font-weight: bold;
 
@@ -56,6 +55,7 @@
 
     @include tablet-small {
       font-size: 31px;
+      text-align: left;
     }
   }
 
