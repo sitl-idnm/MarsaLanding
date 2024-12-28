@@ -18,7 +18,7 @@ const Introduce: FC<IntroduceProps> = ({ className }) => {
         </TitleGradient>
       </h1>
       <p className={styles.subtitle}>
-        Узнай, как мы генерируем сотни лидов ежедневно!
+        Узнай, как мы генерируем тысячи лидов ежедневно!
       </p>
       <div className={styles.button}>
         <ButtonBlue>

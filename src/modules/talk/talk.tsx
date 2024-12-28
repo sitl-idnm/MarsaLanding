@@ -38,7 +38,7 @@ const Talk: FC<TalkProps> = ({
           <Image className={styles.itemImage} src={AvatarSecond} alt=''></Image>
           <div className={styles.itemText}>
             <h3 className={styles.itemTitle}>
-              Мария К.
+              Владимир К.
             </h3>
             <p className={styles.itemDescription}>
               Здесь все по делу: инструменты, стратегии, офферы. Не трачу время на поиски            </p>

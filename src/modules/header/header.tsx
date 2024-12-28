@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import { TelegramLink, Wrapper } from '@/ui';
+import { InstagramLink, TelegramLink, Wrapper } from '@/ui';
 import classNames from 'classnames';
 
 import styles from './header.module.scss';
@@ -18,6 +18,7 @@ const Header: FC<HeaderProps> = ({ className }) => {
         {/* Отображение TelegramLink для больших экранов */}
         <div className={styles.tg__about}>
           <TelegramLink className={styles.telegram} />
+          <InstagramLink className={styles.instagram} />
         </div>
         <Logo className={styles.logo} />
       </Wrapper>

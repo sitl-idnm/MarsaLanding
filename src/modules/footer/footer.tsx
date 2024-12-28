@@ -1,7 +1,7 @@
 'use client';
 
 import { FC } from 'react';
-import { TelegramLink, Wrapper } from '@/ui';
+import { InstagramLink, TelegramLink, Wrapper } from '@/ui';
 
 import styles from './footer.module.scss';
 import Logo from '../header/logo';
@@ -12,15 +12,18 @@ const Footer: FC = () => {
     <footer className={styles.root}>
       <Wrapper className={styles.wrapper}>
         <div className={styles.info}>
-          <a target="_blank" href="https://marsa-landing.vercel.app/vacancy">
+          <a target="_blank" href="https://marsa.team/vacancy">
             Вакансии
           </a>
-          <a target="_blank" href="https://marsa-landing.vercel.app/">
+          <a target="_blank" href="https://marsa.team">
             О нас
           </a>
         </div>
         <Logo className={styles.logo} />
-        <TelegramLink className={styles.telegram} />
+        <div className={styles.social}>
+          <InstagramLink className={styles.instagram} />
+          <TelegramLink className={styles.telegram} />
+        </div>
       </Wrapper>
     </footer>
   );

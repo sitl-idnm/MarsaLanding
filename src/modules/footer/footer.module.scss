@@ -48,6 +48,14 @@
   }
 }
 
+.instagram {
+
+  svg {
+    height: 45px;
+    width: 43px;
+  }
+}
+
 .links, .info {
   display: flex;
   flex-direction: column;
@@ -76,4 +84,9 @@
   @include tablet-small {
     font-size: 12px;
   }
+}
+
+.social {
+  display: flex;
+  gap: 10px;
 }
